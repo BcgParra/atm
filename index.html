@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Atm Engenharia</title>
+</head>
+
+
+<body>
+    <div class="csv">
+
+        <div class="header">
+            <a href="#default" class="logo"> <img src="img/ATM_LOGOTIPO.bmp" alt=""></a>
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Contato</a>
+                <a href="#about">Sobre</a>
+            </div>
+        </div>
+
+        <div class="baixar"> <a href="Norsal/230810.csv" download="230810.csv">Baixar arquivo</a></div>
+
+        <div class="tabela">
+            <input type="file" id="csvFileInput" style="padding-bottom: 20px">
+            <table id="csvRoot"></table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
+    <script type="module" src="./js/TableCsv.js"></script>
+</body>
+
+<footer class="rodape">
+    <span class="nome">Atm Engenharia - Todos os direitos reservados</span>
+</footer>
+
+</html>
